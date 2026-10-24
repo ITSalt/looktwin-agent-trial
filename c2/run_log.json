@@ -1,0 +1,55 @@
+{
+ "runs": [
+  {
+   "task": "T1",
+   "gen_model": "anthropic/claude-sonnet-5.5",
+   "gen_cost": 0.00701118,
+   "rev_model": "openai/gpt-5.3-codex",
+   "rev_cost": 0.0188686575,
+   "code_sha": "dcf5d5eae7ac2142d15799af347f3fd96f7dc177afb51d90f02f96c12350eef3",
+   "review_sha": "aee29c31a433e54cedb5060d2e35f3506961e391ad956f6a98d8136528d98c26",
+   "utc": "2026-10-22 18:53:20"
+  },
+  {
+   "task": "T2",
+   "gen_model": "anthropic/claude-sonnet-5.5",
+   "gen_cost": 0.00553212,
+   "rev_model": "openai/gpt-5.3-codex",
+   "rev_cost": 0.036524565,
+   "code_sha": "ae37124bc962ac926056b12a6aa3c2f8cbc401143f7b7e37b89774cb2613697f",
+   "review_sha": "39966abeb0dbf6c1f4e01d4e752dc30c027e54b30adcf36cb77e6c0726c3c408",
+   "utc": "2026-10-22 18:54:01"
+  },
+  {
+   "task": "T3",
+   "gen_model": "anthropic/claude-sonnet-5.5",
+   "gen_cost": 0.0151074,
+   "rev_model": "openai/gpt-5.3-codex",
+   "rev_cost": 0.033031845,
+   "code_sha": "2663ad5ad2375dccf5a6cded59f4580dcd7ee760be9429fd00269162a41f9eb9",
+   "review_sha": "e807895a732199876ffe96f82b86684fc6e2ecb4203293b5db5030b49382b319",
+   "utc": "2026-10-22 18:54:53"
+  },
+  {
+   "task": "T4",
+   "gen_model": "anthropic/claude-sonnet-5.5",
+   "gen_cost": 0.00831402,
+   "rev_model": "openai/gpt-5.3-codex",
+   "rev_cost": 0.010045035,
+   "code_sha": "f5132cb90434151e79fddb2ba52cc6fe808ef2b32d6f5ec6b23e46da7f9e1237",
+   "review_sha": "c05d811cf5d7eeb128943447ccb77b8adaddc77d117375fcd5af66c770089c17",
+   "utc": "2026-10-22 18:55:13"
+  },
+  {
+   "task": "T5",
+   "gen_model": "anthropic/claude-sonnet-5.5",
+   "gen_cost": 0.01337292,
+   "rev_model": "openai/gpt-5.3-codex",
+   "rev_cost": 0.02324322,
+   "code_sha": "f98c32f4222cf1b5c1d1d6e87a39ea045427dfb3a79cd40c82fc6e70eb33481c",
+   "review_sha": "b21a7569df7c0a988c372c0f63e7841bcb19b96ca54f908c6f4758b440d40191",
+   "utc": "2026-10-22 18:55:48"
+  }
+ ],
+ "total_cost": 0.17105096250000004
+}

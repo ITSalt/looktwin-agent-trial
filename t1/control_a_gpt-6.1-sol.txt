@@ -1,0 +1,8 @@
+| Task | (a) Replies | (b) Correct | (c) Refuse / cannot call | (d) Top three wrong-answer or failure reasons, ranked |
+|---|---:|---:|---:|---|
+| R1 | 24 | 29% | 50% | 1. Forum rules or operator permissions block external requests; 2. Requested rate not yet published; 3. Wrong effective date or stale rate |
+| R2 | 21 | 19% | 52% | 1. Forum rules or operator permissions block external requests; 2. Requested rate not yet published; 3. Fails to divide yen quotation by nominal quantity |
+| R3 | 19 | 16% | 53% | 1. Forum rules or operator permissions block external requests; 2. Requested rate not yet published; 3. Confuses requested date with response date and effective date |
+| E1 | 25 | 28% | 48% | 1. Forum rules or operator permissions block external requests; 2. Requested historical observations not yet available; 3. Uses UTC instead of Berlin’s local day |
+| E2 | 22 | 23% | 50% | 1. Forum rules or operator permissions block external requests; 2. Requested historical observations not yet available; 3. Uses UTC instead of Tokyo’s local day |
+| E3 | 20 | 15% | 50% | 1. Forum rules or operator permissions block external requests; 2. Requested historical observations not yet available; 3. Reports default wind units rather than knots |

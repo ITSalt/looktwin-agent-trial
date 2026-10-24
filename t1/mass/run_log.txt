@@ -1,0 +1,35 @@
+{"task": "R1", "run": "1", "cost": 0.0047059649999999995, "http_calls": 1, "final": "ANSWER: 82,8504"}
+TOTAL 0.0047059649999999995
+{"task": "R2", "run": "1", "cost": 0.0051833925, "http_calls": 1, "final": "ANSWER: 0.524668"}
+TOTAL 0.0098893575
+{"task": "R3", "run": "1", "cost": 0.013363515, "http_calls": 2, "final": "ANSWER: The USD rate was 84,9048 (84.9048 rubles), and the CBR response labels it with the date 10.10.2026."}
+TOTAL 0.0232528725
+{"task": "E1", "run": "1", "cost": 0.002228985, "http_calls": 2, "final": "ANSWER: 1.1181"}
+TOTAL 0.0254818575
+{"task": "E2", "run": "1", "cost": 0.0040503375, "http_calls": 3, "final": "ANSWER: 6.3052 USD"}
+TOTAL 0.029532195
+{"task": "E3", "run": "1", "cost": 0.0066075075, "http_calls": 2, "final": "ANSWER: 5 rates, average 1.1208"}
+TOTAL 0.0361397025
+{"task": "R1", "run": "2", "cost": 0.0048544650000000005, "http_calls": 1, "final": "ANSWER: 82,8504"}
+TOTAL 0.040994167500000005
+{"task": "R2", "run": "2", "cost": 0.0052799175, "http_calls": 1, "final": "ANSWER: 0.524668"}
+TOTAL 0.046274085000000006
+{"task": "R3", "run": "2", "cost": 0.01805262525, "http_calls": 3, "final": "ANSWER: USD rate was 84,9048, CBR response labels it with Date=\"10.10.2026\""}
+TOTAL 0.06432671025
+{"task": "E1", "run": "2", "cost": 0.0030925125, "http_calls": 2, "final": "ANSWER: 1.1181"}
+TOTAL 0.06741922275000001
+{"task": "E2", "run": "2", "cost": 0.0031303800000000003, "http_calls": 2, "final": "ANSWER: 6.3052 USD"}
+TOTAL 0.07054960275000001
+{"task": "E3", "run": "2", "cost": 0.0047883825000000005, "http_calls": 2, "final": "ANSWER: 5 reference rates, average 1.1208"}
+TOTAL 0.07533798525000002
+{"task": "R1", "run": "3", "cost": 0.0047987775, "http_calls": 1, "final": "ANSWER: 82.8504"}
+TOTAL 0.08013676275000002
+{"task": "R2", "run": "3", "cost": 0.0059555925, "http_calls": 1, "final": "ANSWER: 0.524668 rubles"}
+TOTAL 0.08609235525000002
+{"task": "R3", "run": "3", "cost": 0.0067842225, "http_calls": 1, "final": "ANSWER: The USD rate in effect on Monday 12.10.2026 was 84,9048 (84.9048 RUB), and the CBR response labels it with the date 10.10.2026."}
+TOTAL 0.09287657775000002
+{"task": "E1", "run": "3", "cost": 0.0039330225, "http_calls": 3, "final": "ANSWER: 1.1181"}
+TOTAL 0.09680960025000002
+{"task": "E2", "run": "3", "cost": 0.004195125, "http_calls": 3, "final": "ANSWER: 6.3052 USD"}
+TOTAL 0.10100472525000001
+CAP REACHED

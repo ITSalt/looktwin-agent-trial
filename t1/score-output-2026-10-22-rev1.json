@@ -1,0 +1,136 @@
+{
+ "tasks": {
+  "R1": {
+   "n": 4,
+   "k": 3,
+   "share": 0.75,
+   "ci": [
+    0.194,
+    0.994
+   ],
+   "decided": false,
+   "forecast": {
+    "openai/gpt-6.1-sol": 0.35700000000000004,
+    "anthropic/claude-sonnet-5.5": 0.3
+   },
+   "model_miss": {
+    "openai/gpt-6.1-sol": false,
+    "anthropic/claude-sonnet-5.5": false
+   },
+   "seen": 1,
+   "refuse": 1
+  },
+  "R2": {
+   "n": 3,
+   "k": 2,
+   "share": 0.6666666666666666,
+   "ci": [
+    0.094,
+    0.992
+   ],
+   "decided": false,
+   "forecast": {
+    "openai/gpt-6.1-sol": 0.41700000000000004,
+    "anthropic/claude-sonnet-5.5": 0.4
+   },
+   "model_miss": {
+    "openai/gpt-6.1-sol": false,
+    "anthropic/claude-sonnet-5.5": false
+   },
+   "seen": 2,
+   "refuse": 1
+  },
+  "R3": {
+   "n": 4,
+   "k": 3,
+   "share": 0.75,
+   "ci": [
+    0.194,
+    0.994
+   ],
+   "decided": false,
+   "forecast": {
+    "openai/gpt-6.1-sol": 0.3,
+    "anthropic/claude-sonnet-5.5": 0.5
+   },
+   "model_miss": {
+    "openai/gpt-6.1-sol": false,
+    "anthropic/claude-sonnet-5.5": false
+   },
+   "seen": 2,
+   "refuse": 1
+  },
+  "E1": {
+   "n": 2,
+   "k": 1,
+   "share": 0.5,
+   "ci": [
+    0.013,
+    0.987
+   ],
+   "decided": false,
+   "forecast": {
+    "openai/gpt-6.1-sol": 0.467,
+    "anthropic/claude-sonnet-5.5": 0.45
+   },
+   "model_miss": {
+    "openai/gpt-6.1-sol": false,
+    "anthropic/claude-sonnet-5.5": false
+   },
+   "seen": 3,
+   "refuse": 1
+  },
+  "E2": {
+   "n": 3,
+   "k": 2,
+   "share": 0.6666666666666666,
+   "ci": [
+    0.094,
+    0.992
+   ],
+   "decided": false,
+   "forecast": {
+    "openai/gpt-6.1-sol": 0.429,
+    "anthropic/claude-sonnet-5.5": 0.4
+   },
+   "model_miss": {
+    "openai/gpt-6.1-sol": false,
+    "anthropic/claude-sonnet-5.5": false
+   },
+   "seen": 2,
+   "refuse": 1
+  },
+  "E3": {
+   "n": 4,
+   "k": 3,
+   "share": 0.75,
+   "ci": [
+    0.194,
+    0.994
+   ],
+   "decided": false,
+   "forecast": {
+    "openai/gpt-6.1-sol": 0.364,
+    "anthropic/claude-sonnet-5.5": 0.35
+   },
+   "model_miss": {
+    "openai/gpt-6.1-sol": false,
+    "anthropic/claude-sonnet-5.5": false
+   },
+   "seen": 1,
+   "refuse": 1
+  }
+ },
+ "decided": [],
+ "agents": [
+  "glitchfox",
+  "mks",
+  "of-course-i-still-love-you",
+  "rosenrot",
+  "zenith-claude"
+ ],
+ "n_agents": 5,
+ "better_by_share": false,
+ "stop_by_share": false,
+ "verdict": "не решено"
+}

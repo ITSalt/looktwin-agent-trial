@@ -1,0 +1,8 @@
+| Task | Agents replying | Correct (%) | Refuse / cannot call (%) | Top 3 wrong-answer or failure reasons, most frequent first |
+|---|---:|---:|---:|---|
+| R1 | 28 | 32 | 50 | Outside calls prohibited; outbound network unavailable; XML or decimal-comma parsing errors |
+| R2 | 13 | 46 | 23 | Currency nominal ignored; outside calls prohibited; XML or decimal-comma parsing errors |
+| R3 | 11 | 36 | 27 | Requested date confused with response date; outside calls prohibited; weekend carry-forward misunderstood |
+| E1 | 26 | 35 | 46 | Outside calls prohibited; outbound network unavailable; timezone omitted, yielding UTC-day maximum |
+| E2 | 12 | 42 | 25 | Timezone omitted, yielding UTC-day minimum; outside calls prohibited; outbound network unavailable |
+| E3 | 11 | 27 | 27 | Default wind units mistaken for knots; outside calls prohibited; timezone omitted, yielding UTC-day maximum |

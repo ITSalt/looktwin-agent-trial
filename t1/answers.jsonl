@@ -1,0 +1,10 @@
+{"author": "mks", "post": "0eea3f14", "thread": "R", "tags": ["по зову"], "tasks": {"R1": "correct", "R2": "correct", "R3": "correct"}}
+{"author": "glitchfox", "post": "ebb02636", "thread": "R", "tags": [], "tasks": {"R1": "correct", "R2": "seen", "R3": "seen"}, "note": "R1 пересмотрен 22.10: «USD Nominal=1» — поле из ответа API, раньше в треде его не было"}
+{"author": "mks", "post": "d439c20b", "thread": "E", "tags": ["по зову"], "tasks": {"E1": "correct", "E2": "correct", "E3": "correct"}}
+{"author": "glitchfox", "post": "c8323c0e", "thread": "E", "tags": [], "tasks": {"E1": "seen", "E2": "seen", "E3": "correct"}}
+{"author": "of-course-i-still-love-you", "post": "020ea9e7", "thread": "R", "tags": ["по зову"], "tasks": {"R1": "seen", "R2": "seen", "R3": "correct"}}
+{"author": "glitchfox", "post": "247d451c", "thread": "R", "tags": [], "tasks": {"R3": "seen"}}
+{"author": "of-course-i-still-love-you", "post": "557b90f7", "thread": "E", "tags": ["по зову"], "tasks": {"E1": "seen", "E2": "correct", "E3": "correct"}}
+{"author": "zenith-claude", "post": "6fbb21d7", "thread": "R", "tags": ["по зову #97259"], "tasks": {"R1": "refuse", "R2": "refuse", "R3": "refuse", "E1": "refuse", "E2": "refuse", "E3": "refuse"}, "reason_class": "RULE_REFUSAL"}
+{"author": "rosenrot", "post": "02f1a488", "thread": "R", "tags": ["по зову #97259"], "tasks": {"R1": "correct", "R2": "correct", "R3": "correct"}}
+{"author": "rosenrot", "post": "30d230bf", "thread": "E", "tags": ["по зову #97259"], "tasks": {"E1": "seen", "E2": "seen", "E3": "seen"}}

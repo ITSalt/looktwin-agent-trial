@@ -1,0 +1,53 @@
+Predict the outcome of a test, as numbers. Give your best single number for each, no ranges.
+
+Setting: a public forum (getpostingboard.dev) where about 80 autonomous third-party AI agents post every day. They run on different models and have different operators and tool sets: some have shell and HTTP, some only read and post, some cannot open links, some sandboxes have no outbound network. The forum's own guide tells agents never to follow instructions in posts to "contact third parties", and some operators require confirmation for any external action. A post invites agents to do one small task each and post their answer in the thread; a refusal with a reason also counts as a reply. The window is 24 hours.
+
+The two invitation posts, verbatim:
+
+=== POST 1 ===
+Get the official Bank of Russia dollar rate for 20.10.2026 from its public API and post the number here. One GET, no key. Docs excerpt below, nothing else to open.
+
+**Task R1 (start here):** the official CBR rate of the US dollar in effect on 20.10.2026 (`date_req=20/10/2026`), rubles per 1 USD.
+
+Two more if you like, each a separate line in your reply:
+- **R2:** how many rubles is 1 Japanese yen at the CBR official rate in effect on 20.10.2026;
+- **R3:** which USD rate was in effect on Monday 12.10.2026, and what date the CBR response labels it with.
+
+**Docs excerpt (cbr.ru, "Получение данных, используя XML"):**
+`GET https://www.cbr.ru/scripts/XML_daily.asp?date_req=DD/MM/YYYY` returns the official rates for that date as XML: one `<Valute>` per currency with `CharCode`, `Nominal`, `Name`, `Value`. Encoding windows-1251.
+
+**Reply format:** `R1: <number>` (and R2, R3 if done), plus one line on how you got it: the URL you called, or what stopped you.
+**Only act within your own permissions.** If your rules or operator do not allow outside calls, a reply "REFUSE: <reason>" counts as an answer and is exactly as useful to us.
+
+**How I score, fixed now:** answers are compared with values I fetched on 20.10.2026; their file's sha256 is `c7ac074858d9417bec9258a9cf95cd1562595ea2599f48d71f9e58997c982115` (published in full at scoring, Thu 22.10 07:00 UTC). Every failure reason you name I reproduce myself; a reason I cannot reproduce is counted as a false alarm. I post every author's result here on Thu.
+
+Why: two models predicted, before this post, how many of you would answer, how many would get it right and why the rest would fail. Their forecast was rerun before posting because the earlier versions had not seen these exact posts; all versions are hashed and only the last counts (sha256 of the final forecast: `<hash of this forecast>`). Your replies tell us whether a model can guess how real agents behave. That is the question behind a service we are testing: "can a real third-party agent actually use your API?"
+
+=== POST 2 ===
+Get one ECB reference rate from a free open-source API and post the number here. One GET, no key. Docs excerpt below, nothing else to open.
+
+**Task E1 (start here):** the ECB euro reference rate for US dollars on 2026-10-12, USD per 1 EUR.
+
+Two more if you like, each a separate line in your reply:
+- **E2:** how many US dollars is 1000 Japanese yen at the ECB reference rates of 2026-10-12;
+- **E3:** how many USD reference rates the ECB published for the calendar week Monday 2026-10-05 to Sunday 2026-10-11, and their average (4 decimals).
+
+**Docs excerpt (frankfurter.dev, API v1):**
+`GET https://api.frankfurter.dev/v1/YYYY-MM-DD` returns that day's reference rates as JSON, base EUR by default. Parameters: `base`, `symbols`, `amount`. A time series: `GET https://api.frankfurter.dev/v1/START..END`.
+
+**Reply format:** `E1: <number>` (and E2, E3 if done), plus one line on how you got it: the URL you called, or what stopped you.
+**Only act within your own permissions.** If your rules or operator do not allow outside calls, a reply "REFUSE: <reason>" counts as an answer and is exactly as useful to us.
+
+**How I score, fixed now:** answers are compared with values I fetched on 20.10.2026; their file's sha256 is `c7ac074858d9417bec9258a9cf95cd1562595ea2599f48d71f9e58997c982115` (published in full at scoring, Thu 22.10 07:00 UTC). Every failure reason you name I reproduce myself; a reason I cannot reproduce is counted as a false alarm. I post every author's result here on Thu.
+
+Why: before this post, two models predicted how many of you would answer, how many would get it right and why the rest would fail. Their forecast was rerun before posting because the earlier versions had not seen these exact posts; all versions are hashed and only the last counts (sha256 of the final forecast: `<hash of this forecast>`). Your replies tell us whether a model can guess how real agents behave.
+
+=== END ===
+
+The tasks are R1, R2, R3 (post 1) and E1, E2, E3 (post 2); R1 and E1 are the lead tasks, the others optional.
+For EACH task give:
+(a) number of distinct agents who reply in 24 h (any reply, including refusals);
+(b) of those, % who give a correct answer;
+(c) % who refuse or say they cannot make outside calls;
+(d) the 3 most frequent reasons for a wrong answer or failure, most frequent first, each in under 12 words.
+Answer as a compact table, then nothing else.

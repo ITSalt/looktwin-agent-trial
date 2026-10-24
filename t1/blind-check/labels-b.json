@@ -1,0 +1,15 @@
+{
+  "A1": {"values": {}, "independent": "no answer", "receipt": "none", "note": "No answer to the task."},
+  "A2": {"values": {"R1": "82,8504", "R2": "0,524668", "R3": "84,9048"}, "independent": "yes", "receipt": "none", "note": "First reply with values; its R3 holiday reason was wrong, so the explanation earns nothing."},
+  "A3": {"values": {"R1": "82,8504", "R2": "0,524668", "R3": "84,9048"}, "independent": "yes", "receipt": "none", "note": "Same values as A2 three minutes later and the same wrong holiday reason, but it shows its own call (USD Nominal=1 Value=82,8504; R3 via date_req=12/10/2026, which A2 did not state)."},
+  "A4": {"values": {"R1": "82,8504", "R2": "0,524668", "R3": "84,9048"}, "independent": "yes", "receipt": "a", "note": "Corrects A2/A3's holiday reason with its own date-stepping evidence (09/10, 10/10, 11/10, 13/10 labels); this is the Q-001 case."},
+  "A5": {"values": {"R3": "84,9048"}, "independent": "yes", "receipt": "none", "note": "Borderline independent: it re-steps the dates itself and adds an explicit 12/10 request plus a D+1 holiday-check rule, but the finding retells A4's correction, so no receipt."},
+  "A6": {"values": {}, "independent": "no answer", "receipt": "none", "note": "Generic comment, no values."},
+  "A7": {"values": {}, "independent": "no answer", "receipt": "none", "note": "REFUSE with a reason (outside HTTP not allowed); counts in n as a refusal."},
+  "A8": {"values": {"R1": "82,8504", "R2": "0,524668", "R3": "84,9048"}, "independent": "yes", "receipt": "b", "note": "Own response details no earlier reply had (Valute ID R01235, NumCode 840, VunitRate field that already divides by Nominal, root ValCurs Date, JPY 53,7032 on 10.10); receipt b for VunitRate. Both labels assume the not-shown organizer reply at 18:52 did not already mention VunitRate or the values."},
+  "B9": {"values": {}, "independent": "no answer", "receipt": "none", "note": "No answer to the task."},
+  "B10": {"values": {"E1": "1.1181", "E2": "6.3052", "E3": "5 rates published, average 1.1208"}, "independent": "yes", "receipt": "none", "note": "First reply with values. The not-shown organizer reply at 10:04:23 came earlier; if it had given the values, this label would need its own-call evidence (URLs and JPY 177.33 are shown, so it would most likely stay yes)."},
+  "B11": {"values": {"E1": "1.1181", "E2": "6.3052", "E3": "5 rates published, average 1.1208"}, "independent": "yes", "receipt": "none", "note": "Same values as B10, but it lists the five individual daily USD values, which B10 did not."},
+  "B12": {"values": {"E1": "1.1181", "E2": "6.3052", "E3": "5 rates published, average 1.1208"}, "independent": "yes", "receipt": "b", "note": "New evidence: the base=JPY&amount=1000 cross-check and the series end_date=2026-10-09 field; end_date is the Q-002 case (b)."},
+  "B13": {"values": {"E1": "1.1181", "E2": "6.3052", "E3": "5 rates published, average 1.1208"}, "independent": "yes", "receipt": "none", "note": "Borderline independent: the URLs are shown and start_date is the only detail not already in B12; the end_date clamping retells B12's find, so no receipt."}
+}

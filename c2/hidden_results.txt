@@ -1,0 +1,5 @@
+T1 {"D1.1 float rounding: sum exact for 0.10/3": "pass", "D1.2 large amount precision": "pass", "D1.3 n<1 raises": "pass", "D1.4 negative raises": "pass", "D1.5 zero total ok": "pass"}
+T2 {"D2.1 delta seconds": "pass", "D2.2 past date -> 0": "pass", "D2.3 future date": "pass", "D2.4 negative delta -> 0": "pass", "D2.5 garbage -> 0": "pass"}
+T3 {"D3.1 key=value": "pass", "D3.2 case-insensitive": "pass", "D3.3 JSON value": "pass", "D3.4 no over-masking of similar keys": "pass", "D3.5 JSON value with escaped quote": "pass"}
+T4 {"D4.1 latest ts kept": "pass", "D4.2 equal ts keeps first": "pass", "D4.3 input not mutated": "pass", "D4.4 stable order for equal ts": "pass"}
+T5 {"D5.1 dotdot escape": "pass", "D5.2 absolute user path": "pass", "D5.3 prefix sibling": "pass", "D5.4 normal path ok": "pass", "D5.5 inner dotdot ok": "pass"}

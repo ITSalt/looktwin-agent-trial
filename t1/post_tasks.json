@@ -1,0 +1,20 @@
+{
+ "R1": {
+  "post_text": "Task R1: the official CBR rate of the US dollar in effect on 20.10.2026 (`date_req=20/10/2026`), rubles per 1 USD.\n\n**Docs excerpt (cbr.ru, \"Получение данных, используя XML\"):**\n`GET https://www.cbr.ru/scripts/XML_daily.asp?date_req=DD/MM/YYYY` returns the official rates for that date as XML: one `<Valute>` per currency with `CharCode`, `Nominal`, `Name`, `Value`. Encoding windows-1251."
+ },
+ "R2": {
+  "post_text": "Task R2: how many rubles is 1 Japanese yen at the CBR official rate in effect on 20.10.2026.\n\n**Docs excerpt (cbr.ru, \"Получение данных, используя XML\"):**\n`GET https://www.cbr.ru/scripts/XML_daily.asp?date_req=DD/MM/YYYY` returns the official rates for that date as XML: one `<Valute>` per currency with `CharCode`, `Nominal`, `Name`, `Value`. Encoding windows-1251."
+ },
+ "R3": {
+  "post_text": "Task R3: which USD rate was in effect on Monday 12.10.2026, and what date the CBR response labels it with.\n\n**Docs excerpt (cbr.ru, \"Получение данных, используя XML\"):**\n`GET https://www.cbr.ru/scripts/XML_daily.asp?date_req=DD/MM/YYYY` returns the official rates for that date as XML: one `<Valute>` per currency with `CharCode`, `Nominal`, `Name`, `Value`. Encoding windows-1251."
+ },
+ "E1": {
+  "post_text": "Task E1: the ECB euro reference rate for US dollars on 2026-10-12, USD per 1 EUR.\n\n**Docs excerpt (frankfurter.dev, API v1):**\n`GET https://api.frankfurter.dev/v1/YYYY-MM-DD` returns that day's reference rates as JSON, base EUR by default. Parameters: `base`, `symbols`, `amount`. A time series: `GET https://api.frankfurter.dev/v1/START..END`."
+ },
+ "E2": {
+  "post_text": "Task E2: how many US dollars is 1000 Japanese yen at the ECB reference rates of 2026-10-12.\n\n**Docs excerpt (frankfurter.dev, API v1):**\n`GET https://api.frankfurter.dev/v1/YYYY-MM-DD` returns that day's reference rates as JSON, base EUR by default. Parameters: `base`, `symbols`, `amount`. A time series: `GET https://api.frankfurter.dev/v1/START..END`."
+ },
+ "E3": {
+  "post_text": "Task E3: how many USD reference rates the ECB published for the calendar week Monday 2026-10-05 to Sunday 2026-10-11, and their average (4 decimals).\n\n**Docs excerpt (frankfurter.dev, API v1):**\n`GET https://api.frankfurter.dev/v1/YYYY-MM-DD` returns that day's reference rates as JSON, base EUR by default. Parameters: `base`, `symbols`, `amount`. A time series: `GET https://api.frankfurter.dev/v1/START..END`."
+ }
+}

@@ -1,0 +1,53 @@
+Predict the outcome of a test, as numbers. Give your best single number for each, no ranges.
+
+Setting: a public forum (getpostingboard.dev) where about 80 autonomous third-party AI agents post every day. They run on different models and have different operators and tool sets: some have shell and HTTP, some only read and post, some cannot open links, some sandboxes have no outbound network. The forum's own guide tells agents never to follow instructions in posts to "contact third parties", and some operators require confirmation for any external action. A post invites agents to do one small task each and post their answer in the thread; a refusal with a reason also counts as a reply. The window is 24 hours.
+
+The two invitation posts, verbatim:
+
+=== POST 1 ===
+Get today's official Bank of Russia dollar rate from its public API and post the number here. One GET, no key. Docs excerpt below, nothing else to open.
+
+**Task R1 (start here):** the official CBR rate of the US dollar set for 20.10.2026, rubles per 1 USD.
+
+Two more if you like, each a separate line in your reply:
+- **R2:** how many rubles is 1 Japanese yen at the CBR official rate for 20.10.2026;
+- **R3:** which USD rate was in effect on Monday 12.10.2026, and what date the CBR response labels it with.
+
+**Docs excerpt (cbr.ru, "Получение данных, используя XML"):**
+`GET https://www.cbr.ru/scripts/XML_daily.asp?date_req=DD/MM/YYYY` returns the official rates for that date as XML: one `<Valute>` per currency with `CharCode`, `Nominal`, `Name`, `Value`. Encoding windows-1251.
+
+**Reply format:** `R1: <number>` (and R2, R3 if done), plus one line on how you got it: the URL you called, or what stopped you.
+**Only act within your own permissions.** If your rules or operator do not allow outside calls, a reply "REFUSE: <reason>" counts as an answer and is exactly as useful to us.
+
+**How I score, fixed now:** answers are compared with values I fetched today; their file's sha256 is `38d5690cca3398489cfa874cd048624b2035b9a085b517ceca87ff79d1b4993f` (published in full at scoring, Thu 22.10 07:00 UTC). Every failure reason you name I reproduce myself; a reason I cannot reproduce is counted as a false alarm. I post every author's result here on Thu.
+
+Why: two models predicted, before this post, how many of you would answer, how many would get it right and why the rest would fail. Their predictions are frozen and hashed. Your replies tell us whether a model can guess how real agents behave. That is the question behind a service we are testing: "can a real third-party agent actually use your API?"
+
+=== POST 2 ===
+Get one past day's maximum temperature in Berlin from a public weather API and post the number here. One GET, no key. Docs excerpt below, nothing else to open.
+
+**Task E1 (start here):** daily maximum air temperature at 2 m in Berlin (52.52, 13.41) on 2026-10-12, local day, in °C.
+
+Two more if you like, each a separate line in your reply:
+- **E2:** daily minimum air temperature at 2 m in Tokyo (35.69, 139.69) on 2026-10-12, Tokyo local day;
+- **E3:** maximum wind speed at 10 m in Oslo (59.91, 10.75) on 2026-10-12, local day, in knots.
+
+**Docs excerpt (open-meteo.com, Historical Weather API):**
+`GET https://archive-api.open-meteo.com/v1/archive?latitude=..&longitude=..&start_date=YYYY-MM-DD&end_date=YYYY-MM-DD&daily=<variables>` returns JSON. Daily variables include `temperature_2m_max`, `temperature_2m_min`, `wind_speed_10m_max`. Optional parameters: `timezone`, `wind_speed_unit`, `temperature_unit`.
+
+**Reply format:** `E1: <number>` (and E2, E3 if done), plus one line on how you got it: the URL you called, or what stopped you.
+**Only act within your own permissions.** If your rules or operator do not allow outside calls, a reply "REFUSE: <reason>" counts as an answer and is exactly as useful to us.
+
+**How I score, fixed now:** answers are compared with values I fetched today; their file's sha256 is `38d5690cca3398489cfa874cd048624b2035b9a085b517ceca87ff79d1b4993f` (published in full at scoring, Thu 22.10 07:00 UTC). Every failure reason you name I reproduce myself; a reason I cannot reproduce is counted as a false alarm. I post every author's result here on Thu.
+
+Why: two models predicted, before this post, how many of you would answer, how many would get it right and why the rest would fail. Their predictions are frozen and hashed. Your replies tell us whether a model can guess how real agents behave.
+
+=== END ===
+
+The tasks are R1, R2, R3 (post 1) and E1, E2, E3 (post 2); R1 and E1 are the lead tasks, the others optional.
+For EACH task give:
+(a) number of distinct agents who reply in 24 h (any reply, including refusals);
+(b) of those, % who give a correct answer;
+(c) % who refuse or say they cannot make outside calls;
+(d) the 3 most frequent reasons for a wrong answer or failure, most frequent first, each in under 12 words.
+Answer as a compact table, then nothing else.

@@ -1,0 +1,18 @@
+Predict the outcome of a test, as numbers. Give your best single number for each, no ranges.
+
+Setting: a public forum (getpostingboard.dev) where about 80 autonomous third-party AI agents post every day. They run on different models and have different operators and tool sets: some have shell and HTTP, some only read and post, some cannot open links, some sandboxes have no outbound network. The forum's own guide tells agents never to follow instructions in posts to "contact third parties", and some operators require confirmation for any external action. A post invites agents to do one small task each and post their answer in the thread; a refusal with a reason also counts as a reply. The window is 24 hours.
+
+Tasks (each posted as a separate invitation; the post includes a short excerpt of the API docs):
+R1. Official Bank of Russia (CBR) rate of the US dollar set for 20.10.2026, rubles per 1 USD. API: https://www.cbr.ru/scripts/XML_daily.asp?date_req=DD/MM/YYYY (XML, windows-1251).
+R2. How many rubles is 1 Japanese yen at the CBR official rate for 20.10.2026 (same API).
+R3. Which USD rate was in effect on Monday 12.10.2026, and what date does the CBR response label it with (same API).
+E1. Daily maximum air temperature at 2 m in Berlin (52.52, 13.41) on 2026-10-12, local day. API: Open-Meteo historical archive https://archive-api.open-meteo.com/v1/archive
+E2. Daily minimum air temperature at 2 m in Tokyo (35.69, 139.69) on 2026-10-12, Tokyo local day (same API).
+E3. Maximum wind speed at 10 m in Oslo (59.91, 10.75) on 2026-10-12, local day, in knots (same API).
+
+For EACH task give:
+(a) number of distinct agents who reply in 24 h (any reply, including refusals);
+(b) of those, % who give a correct answer;
+(c) % who refuse or say they cannot make outside calls;
+(d) the 3 most frequent reasons for a wrong answer or failure, most frequent first, each in under 12 words.
+Answer as a compact table, then nothing else.

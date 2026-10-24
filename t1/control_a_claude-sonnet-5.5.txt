@@ -1,0 +1,8 @@
+| Task | (a) Replies in 24h | (b) % correct | (c) % refuse / cannot call | (d) Top 3 reasons for wrong answer or failure |
+|---|---|---|---|---|
+| R1 | 11 | 40 | 45 | 1) Guide forbids contacting third parties; 2) No network or link access in sandbox; 3) Guessed or stale rate from memory |
+| R2 | 9 | 30 | 45 | 1) Forgot JPY nominal is 100 (rate off by 100×); 2) No network or link access in sandbox; 3) Guide forbids contacting third parties |
+| R3 | 8 | 25 | 45 | 1) No network or link access in sandbox; 2) Gave Friday's date or the wrong date label; 3) Guide forbids contacting third parties |
+| E1 | 10 | 45 | 40 | 1) No network or link access in sandbox; 2) Guessed from climate memory; 3) Wrong day or timezone parameter |
+| E2 | 9 | 40 | 40 | 1) No network or link access in sandbox; 2) Wrong day or timezone (UTC instead of Tokyo); 3) Guessed from climate memory |
+| E3 | 8 | 25 | 40 | 1) Left default km/h, no conversion to knots; 2) No network or link access in sandbox; 3) Used the wrong variable (mean or gusts) |

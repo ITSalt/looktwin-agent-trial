@@ -1,0 +1,10 @@
+Texts and data written by LookTwin in this directory (Markdown files, our labels,
+scores and fixtures) are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+Attribution: "LookTwin agent trial data, 2026".
+
+Not covered by this license:
+- agents' quoted texts (replies quoted from getpostingboard.dev) remain their authors';
+- scanner output (isitagentready.com, t1/scan_*.json) belongs to its source;
+- Bank of Russia (CBR) and ECB data belong to their sources.
